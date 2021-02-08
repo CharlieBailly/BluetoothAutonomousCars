@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <!--Display whether bluetooth is available or not-->
+    <TextView
+        android:id="@+id/statusBluetoothTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#000" />
+
+    <!--Bluetooth icon On/Off-->
+    <ImageView
+        android:id="@+id/bluetoothIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <Button
+        android:id="@+id/OnOffBtn"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON/OFF"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"/>
+
+    <Button
+        android:id="@+id/enableDisableDiscoverableBtn"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Discoverable"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"/>
+
+    <Button
+        android:id="@+id/findUnpairedDevicesBtn"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"/>
+
+    <Button
+        android:id="@+id/startConnectionBtn"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Connection"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"/>
+    <ListView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/lvNewDevices"/>
+
+    <Button
+        android:id="@+id/get_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET REQUEST DATA"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"/>
+
+    <TextView
+        android:id="@+id/get_response_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/get_data"
+        android:text="Reponse:"
+        android:textColor="#000"
+        android:padding="10dp"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/post_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND POST DATA"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"/>
+
+    <EditText
+        android:text="Reponse: "
+        android:id="@+id/post_response_data"
+        android:layout_below="@id/post_data"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

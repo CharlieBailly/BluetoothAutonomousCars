@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PafProject.iml" filepath="$PROJECT_DIR$/.idea/PafProject.iml" group="PafProject" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="PafProject/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/httpclient/httpclient.iml" filepath="$PROJECT_DIR$/.idea/modules/app/httpclient/httpclient.iml" group="PafProject/app/httpclient" />
+    </modules>
+  </component>
+</project>
